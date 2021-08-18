@@ -23,7 +23,7 @@ def arpTableSsh(ipAddres):
 def connectSsh(ipAddres,command="system identity print"):
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy)
-    client.connect(ipAddres,username="admin",password="vtufgfccdjhl",port=7772)
+    
     stdin,stdout,stderr =client.exec_command(command)
     return(stdout)
 def matching(addresRouter,addresSwitch,mainPortSwitch):
