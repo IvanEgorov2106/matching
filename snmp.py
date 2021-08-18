@@ -102,5 +102,4 @@ def matchingDl(ipAddresRouter,ipAddresSwitch,mainPortSwitch,nameSwitch,amountSwi
                     +str(lineMac)[9:26].replace(":","-").strip().upper()+"\n")
     file.close()
 
-matching("192.168.102.200","192.168.102.148","ether1")      
-#matchingDl("192.168.102.200","192.168.102.104","25","sw-bz-poe1","28")
+
